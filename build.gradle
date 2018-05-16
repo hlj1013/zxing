@@ -26,7 +26,7 @@ allprojects {
 }
 
 ext{
-    support_version='25.4.0'
+    support_version='26.0.2'
 }
 
 task clean(type: Delete) {
