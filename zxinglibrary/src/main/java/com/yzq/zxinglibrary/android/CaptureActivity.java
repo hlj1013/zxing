@@ -122,23 +122,23 @@ public class CaptureActivity extends AppCompatActivity implements SurfaceHolder.
 
 
     private void initView() {
-        previewView = findViewById(R.id.preview_view);
+        previewView = (SurfaceView) findViewById(R.id.preview_view);
         previewView.setOnClickListener(this);
 
-        viewfinderView = findViewById(R.id.viewfinder_view);
+        viewfinderView = (ViewfinderView)findViewById(R.id.viewfinder_view);
         viewfinderView.setOnClickListener(this);
 
-        backIv = findViewById(R.id.backIv);
+        backIv = (AppCompatImageView)findViewById(R.id.backIv);
         backIv.setOnClickListener(this);
 
-        flashLightIv = findViewById(R.id.flashLightIv);
-        flashLightTv = findViewById(R.id.flashLightTv);
+        flashLightIv =(AppCompatImageView) findViewById(R.id.flashLightIv);
+        flashLightTv =(TextView)  findViewById(R.id.flashLightTv);
 
-        flashLightLayout = findViewById(R.id.flashLightLayout);
+        flashLightLayout = (LinearLayoutCompat)findViewById(R.id.flashLightLayout);
         flashLightLayout.setOnClickListener(this);
-        albumLayout = findViewById(R.id.albumLayout);
+        albumLayout = (LinearLayoutCompat) findViewById(R.id.albumLayout);
         albumLayout.setOnClickListener(this);
-        bottomLayout = findViewById(R.id.bottomLayout);
+        bottomLayout =  (LinearLayoutCompat)findViewById(R.id.bottomLayout);
 
 
         switchVisibility(bottomLayout, config.isShowbottomLayout());
